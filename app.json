@@ -1,0 +1,28 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/join/join"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#2e5e86",
+    "navigationBarTitleText": "辰之音",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "selectedColor": "#1E90FF",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "主页",
+      "iconPath": "images/zhuyeoff.png",
+      "selectedIconPath": "images/zhuyeon.png"
+    },
+    {
+      "pagePath": "pages/join/join",
+      "text": "关注",
+      "iconPath": "images/joinoff.png",
+      "selectedIconPath": "images/joinon.png"
+    }]
+  }
+}

@@ -1,0 +1,23 @@
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots="true" autoplay="true" interval="3000">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='items-list'>
+  <view class='pro-item' wx:for='{{proList}}'>
+    <image class='pro-logo' src='{{item.logo}}'></image>
+      <view class='pro-body'>
+        <view class='pro-title'>{{item.title}}</view>
+        <text class='pro-desc'>{{item.desc}}</text>
+      </view>
+      <audio class='audio-css' poster="{{item.poster}}" name="{{item.name}}" author="{{item.author}}" src="{{item.src}}" id="myAudio" controls loop></audio>
+  </view>
+</view>
+<view class='contact-end'>
+  <view class='contact-text'>联系小辰</view>
+  <button open-type='contact' class='contact-detail'><image src='/images/btn_detail.png'/></button> 
+</view>
